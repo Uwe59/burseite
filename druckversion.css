@@ -1,0 +1,31 @@
+/* ================================================================
+   Stylesheet für die Beispiele aus "Little Boxes"
+   Stand: Druckversion
+   Datei: druckversion.css
+   Media: print
+   Datum: 04.07.2015
+   Autor: Ralf Hof
+   ================================================================ */
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11pt; 
+}
+h1, h2 { font-family: Verdana, Arial, Helvetica, sans-serif; }
+h1 { font-size: 24pt; }
+h2 {
+	font-size: 18pt;
+	padding-top: 6pt;   /* Abstand zwischen Text und Rahmenlinien */
+	border-top: 3pt solid #d90000;   /* rote Rahmenlinien */
+	margin-top: 12pt;
+}
+#navibereich {
+	display: none;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a[href]:after {
+	content:"[Adresse: "attr(href)"] ";  /* [URL] nach Linktext */
+}
